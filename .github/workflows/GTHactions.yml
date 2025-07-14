@@ -24,7 +24,7 @@ jobs:
           python-version: '3.13.5' 
 
       - name: Run script
-        run: python my_script.py
+        run: python ./src/__init__.py
 
       - name: Commint and Push changes
         uses: stefanzweifel/git-auto-commit-action@v6
