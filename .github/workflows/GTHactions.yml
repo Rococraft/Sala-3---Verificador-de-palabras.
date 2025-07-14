@@ -21,12 +21,12 @@ jobs:
       - name: Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13.5' 
+          python-version: '3.12' 
 
       - name: Run script
         run: python ./src/__init__.py
 
-      - name: Commint and Push changes
+      - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: Actualizacion y Prueba del script
